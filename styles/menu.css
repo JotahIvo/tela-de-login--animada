@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    width: 100vw;
+}
+
+.header__tittle{
+    user-select: none;
+}
+
+.menu__item{
+    margin: 1em;
+    font-weight: 500;
+    position: relative;
+}
+
+.a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all .5s;
+}
+
+.a:hover::after{
+    transform: scaleX(1);
+}
+
+.login-btn{
+    background-color: transparent;
+    border: solid 1px var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.login-btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
